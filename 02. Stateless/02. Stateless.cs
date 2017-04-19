@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _02.Stateless
 {
-   public class Program
+    public class Program
     {
        public static void Main()
         {
@@ -15,17 +11,14 @@ namespace _02.Stateless
             {
                 var states = input;
                 var fiction = Console.ReadLine();
-
                 while (fiction.Length > 0)
                 {
                     states = states.Replace(fiction, "");
                     fiction = fiction.Remove(0, 1);
-                    if (fiction.Length>0)
+                    if (fiction.Length > 0) 
                     {
                         fiction = fiction.Remove(fiction.Length - 1, 1);
-                    }
-                    
-                }
+                    }                }
                 if (states == string.Empty)
                 {
                     Console.WriteLine("(void)");
